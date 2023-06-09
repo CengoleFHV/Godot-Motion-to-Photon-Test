@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg4ujgngqftmc"]
+
+[ext_resource type="Script" path="res://ChangeColorOnClick.gd" id="1_tu5dp"]
+
+[sub_resource type="Environment" id="Environment_2ehkv"]
+background_mode = 1
+ambient_light_source = 1
+reflected_light_source = 1
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+environment = SubResource("Environment_2ehkv")
+script = ExtResource("1_tu5dp")
